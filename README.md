@@ -42,7 +42,7 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 - [ReactJS](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Material-UI](https://mui.com/)
-- [SASS](https://sass-lang.com/)
+- [Styled Components](https://styled-components.com/)
   <br><br>
 
 # 🔗 Link do projeto
@@ -55,8 +55,8 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 Clone o projeto e acesse a pasta.
 
 ```
-$ git clone https://github.com/rodrigorvix/casts-breaking-bad.git
-$ cd casts-breaking-bad
+$ git clone https://github.com/rodrigorvix/characters-breaking-bad.git
+$ cd characters-breaking-bad
 ```
 
 Siga os passos abaixo:
@@ -83,9 +83,9 @@ O aplicativo estará disponível para acesso pelo seu navegador em http://localh
     - Tipagem de variáveis;
     - Melhoria na descoberta de falhas e bugs.
   
-  ## Material-UI/SASS:
-    - Utilização de uma biblioteca de componentes;
-    - Utilização de um pré-processador CSS.
+  ## Material-UI:
+    - Utilização de uma biblioteca de componentes.
+    
   <br>
   
 # 👨‍💻 Autor
