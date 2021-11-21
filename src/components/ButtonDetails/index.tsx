@@ -1,16 +1,17 @@
-import { Button } from "@mui/material";
+import React from "react";
 import { ButtonProps as MuiButtonProps } from "@material-ui/core/Button";
 
-import styles from './styles.module.scss'
+import { ButtonDetailsStyle } from "./styles";
 
-interface ButtonProps extends Pick<MuiButtonProps, Exclude<keyof MuiButtonProps, "variant">> {  
+interface ButtonProps
+  extends Pick<MuiButtonProps, Exclude<keyof MuiButtonProps, "variant">> {
   variant?: "square" | MuiButtonProps["variant"];
 }
 
-export function ButtonDetails(props:ButtonProps) {
+export function ButtonDetails(props: ButtonProps) {
   return (
-    <Button variant="contained" className={styles.buttonDetails} onClick={props.onClick}>
-               {props.children}
-    </Button>
+    <ButtonDetailsStyle variant="contained" onClick={props.onClick}>
+      {props.children}
+    </ButtonDetailsStyle>
   );
 }

@@ -1,11 +1,12 @@
-import styles from './styles.module.scss'
+import React from "react";
+
+import { HeaderStyle } from "./styles";
 
 export function Header() {
-
   return (
-    <header className={styles.headerContent}>
+    <HeaderStyle>
       <h1>Personagens de</h1>
       <img src="/images/logo.png" alt="Logo" />
-    </header>
+    </HeaderStyle>
   );
 }

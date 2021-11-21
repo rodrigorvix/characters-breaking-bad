@@ -1,4 +1,8 @@
-.modalCard {
+import { Card, CardActions, CardContent } from "@mui/material";
+
+import styled from "styled-components";
+
+export const ModalCardStyle = styled(Card)`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8,14 +12,12 @@
   border: 2px solid #000;
   box-shadow: 24px;
   padding: 1rem;
-  
-}
+`;
 
-.cardContentModal {
-
+export const CardContentStyle = styled(CardContent)`
   text-align: center;
 
-  h3 { 
+  h3 {
     font-weight: 900;
     font-size: 1.75rem;
   }
@@ -27,10 +29,12 @@
     }
   }
 
-  h3,p {
+  h3,
+  p {
     color: var(--white);
   }
-}
-.buttonDetails{
-  justify-content: center;  
-}
+`;
+
+export const ButtonDetailsStyle = styled(CardActions)`
+  justify-content: center;
+`;

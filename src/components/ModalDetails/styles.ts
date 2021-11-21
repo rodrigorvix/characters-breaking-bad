@@ -1,38 +1,41 @@
-.modalDetails {
+import { Card } from "@mui/material";
+import styled from "styled-components";
+
+export const ModalDetailsStyle = styled(Card)`
   position: absolute;
   bottom: 0;
   right: 50%;
   transform: translate(50%, 0%);
   background: var(--black-500);
   border: 2px solid #000;
- 
+
   height: calc(100vh - 7rem);
   width: 100vw;
 
   overflow-y: auto;
+`;
 
-}
-.characterDetails {
-    height: 100px;
+export const CharacterDetailsStyle = styled.div`
+  height: 100px;
 
-    display:flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 
-    position: sticky;
-    top: 0;
-    background:var(--black-700);
-    padding: 1rem;
-  
-    overflow:hidden;
-  
-  img{
+  position: sticky;
+  top: 0;
+  background: var(--black-700);
+  padding: 1rem;
+
+  overflow: hidden;
+
+  img {
     height: 100%;
     border-radius: 50%;
   }
   div {
     color: var(--white);
     align-self: center;
-    
+
     p + p {
       margin-top: 0.5rem;
     }
@@ -44,31 +47,30 @@
       font-weight: 700;
     }
   }
-}
-.listEpisodes {
+`;
 
+export const ListEpisodesStyle = styled.ul`
   margin-top: 1rem;
 
-  color:var(--white);
-  
+  color: var(--white);
+
   li {
-    display:flex;
-    gap: .5rem;
+    display: flex;
+    gap: 0.5rem;
 
     padding: 1rem;
     font-size: 1rem;
 
-    @media(max-width:600px){
-      gap: .3rem;
-     
+    @media (max-width: 600px) {
+      gap: 0.3rem;
     }
 
-    span:first-child{
+    span:first-child {
       font-weight: 700;
     }
-    span:last-child{
+    span:last-child {
       font-weight: 700;
       justify-self: end;
     }
   }
-}
+`;
