@@ -1,0 +1,36 @@
+.modalCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500;
+  background: var(--black-500);
+  border: 2px solid #000;
+  box-shadow: 24px;
+  padding: 1rem;
+  
+}
+
+.cardContentModal {
+
+  text-align: center;
+
+  h3 { 
+    font-weight: 900;
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  h3,p {
+    color: var(--white);
+  }
+}
+.buttonDetails{
+  justify-content: center;  
+}
