@@ -8,7 +8,8 @@ import { ModalCharacter } from "../ModalCharacter";
 
 import React, { useState } from "react";
 
-import styles from "./styles.module.scss";
+// import styles from "./styles.module.scss";
+import { CardContainerStyle, CardContentStyle } from "./styles";
 
 interface DetailsType {
   title:string,
@@ -35,20 +36,20 @@ export function CharacterCard({char_id,name,img,portrayed, details}: CharacterCa
 
   return (
     <>
-      <Card className={styles.cardContainer}>
+      <CardContainerStyle>
         <CardActionArea onClick={handleOpen}>
           <CardMedia
             component="img"
             image={img}
             alt={name}
           />
-          <CardContent className={styles.cardContent}>
+          <CardContentStyle >
             <Typography gutterBottom variant="h5" component="p">
              {name}
             </Typography>
-          </CardContent>
+          </CardContentStyle>
         </CardActionArea>
-      </Card>
+      </CardContainerStyle>
 
       <ModalCharacter 
         char_id={char_id}
